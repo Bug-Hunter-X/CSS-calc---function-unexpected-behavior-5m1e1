@@ -1,0 +1,11 @@
+/* Corrected CSS with proper units */
+#container {
+  width: calc(100% - 10px); /* Correct: Units are consistent */
+  margin: calc(50px + 10%); /* Incorrect: Inconsistent units */
+  margin: calc(50px + 10%);/*Inconsistent units will likely lead to unexpected results. Consider using percentages or pixels consistently.*/
+  margin: calc(5vw + 10%); /* Correct: Use consistent percentages or pixels */
+}
+/*Additional example with more complex calc() usage*/
+#another-container{
+width: calc(100% - (2 * 10px));/* Correct, the calculation is consistent and has the same unit type for the subtraction */
+}
